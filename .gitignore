@@ -1,0 +1,9 @@
+# Build results
+dst
+
+# Package managers
+node_modules
+.npm
+
+# Artefacts
+.DS_Store

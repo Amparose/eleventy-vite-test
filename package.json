@@ -1,0 +1,16 @@
+{
+  "name": "eleventy-vite-test",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^4.0.2",
+    "@11ty/eleventy-plugin-vite": "^7.1.0-alpha.2",
+    "less": "^4.3.0",
+    "vite": "^5.4.1"
+  }
+}
