@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   publicDir: 'public',
   clearScreen: false,
   build: {
@@ -6,8 +8,7 @@ export default {
       output: {
         assetFileNames: 'css/main.[hash].css',
         chunkFileNames: 'js/[name].[hash].js',
-        entryFileNames: 'js/[name].[hash].js'
       }
     }
   }
-}
+});

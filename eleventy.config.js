@@ -1,4 +1,5 @@
 import EleventyVitePlugin from '@11ty/eleventy-plugin-vite';
+import viteConfig from './vite.config.js';
 
 export default function (eleventyConfig) {
 
@@ -6,7 +7,10 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addLayoutAlias('base', 'base.njk')
 
-  eleventyConfig.addPlugin(EleventyVitePlugin)
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    tempFolderName: ".11ty-vite",
+    viteOptions: viteConfig,
+  });
 
   return {
     templateFormats: ['md', 'njk', 'html', 'liquid'],
