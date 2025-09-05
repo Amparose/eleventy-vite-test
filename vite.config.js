@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     rollupOptions: {
       output: {
-        assetFileNames: 'css/main.[hash].css',
+        assetFileNames: 'css/[name].[hash].[ext]',
         chunkFileNames: 'js/[name].[hash].js',
       }
     }
